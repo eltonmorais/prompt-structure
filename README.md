@@ -107,6 +107,8 @@ This framework improves execution reliability, but it is not magic.
 - `templates/decision-adherence-validation-template.md`: delivery gate template.
 - `examples/yc-prompt-meta-review.md`: concrete meta-review example.
 - `skills/*`: Codex-compatible skills implementing the method.
+- `bootstrap/project-template/*`: ready-to-copy project bootstrap (`AGENTS.md`, `.clinerules`, `.cline`, `.codex`).
+- `bootstrap/install.sh`: one-command installer for new/existing projects.
 
 ## Codex Skills Included
 
@@ -123,6 +125,32 @@ This framework improves execution reliability, but it is not magic.
 mkdir -p "$CODEX_HOME/skills"
 cp -R skills/* "$CODEX_HOME/skills/"
 ```
+
+## Ready-To-Use Project Setup
+
+For most users, the easiest path is installing the complete bootstrap package:
+
+```bash
+bash bootstrap/install.sh /path/to/your/project
+```
+
+This copies:
+- `AGENTS.md` (Codex bootloader),
+- `CLINE.md`,
+- `.clinerules/`,
+- `.cline/skills/`,
+- `.codex/skills/`.
+
+### Internet Fallback (Agent Self-Setup)
+
+If your current project does not contain these files yet, and internet access is available:
+
+```bash
+git clone https://github.com/eltonmorais/prompt-structure.git /tmp/prompt-structure
+bash /tmp/prompt-structure/bootstrap/install.sh /path/to/your/project
+```
+
+If internet access is blocked, ask the user to allow internet access or provide the repository files manually.
 
 ## Tool Compatibility
 

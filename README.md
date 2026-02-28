@@ -92,6 +92,13 @@ Where this approach is usually better:
 
 In short: prompt quality still matters, but governance quality determines reliability.
 
+## Known Limits
+
+This framework improves execution reliability, but it is not magic.
+- It does not replace technical skill or domain knowledge.
+- It adds process overhead for very small tasks.
+- It works best when teams actually enforce the gates.
+
 ## Repository Layout
 
 - `prompts/strategic-prompt.md`: strategic version inspired by the trend.
@@ -116,6 +123,17 @@ In short: prompt quality still matters, but governance quality determines reliab
 mkdir -p "$CODEX_HOME/skills"
 cp -R skills/* "$CODEX_HOME/skills/"
 ```
+
+## Tool Compatibility
+
+The artifacts in this repository are written in a Codex skill format, but the concepts are model-agnostic:
+- strategic prompt,
+- plan review gate,
+- decision baseline freeze,
+- decision adherence validation,
+- authority boundary.
+
+You can adapt the same structure to Cline, Cursor, or other agent runtimes.
 
 ## Suggested Workflow
 

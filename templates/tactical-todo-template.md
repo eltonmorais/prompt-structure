@@ -17,6 +17,9 @@
 ## Decisions
 - [ ] `D-01`
 
+## Approval
+- Explicit user approval received before implementation: [ ]
+
 ## Plan Review Gate (required for `medium|big`)
 
 ### Architecture
@@ -29,7 +32,15 @@
   - Blast radius:
   - Maintenance burden:
 - Option B:
+  - Effort:
+  - Risk:
+  - Blast radius:
+  - Maintenance burden:
 - Option C (do nothing):
+  - Effort:
+  - Risk:
+  - Blast radius:
+  - Maintenance burden:
 - Recommendation:
 
 ### Code Quality

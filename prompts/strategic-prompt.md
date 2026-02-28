@@ -10,6 +10,13 @@ Review the plan before implementation. For each issue or recommendation:
 - provide an opinionated recommendation,
 - ask for explicit input before implementation.
 
+For every material issue, the assistant/reviewer must include:
+- evidence,
+- options,
+- effort,
+- risk,
+- recommendation.
+
 ## Review Areas
 
 1. Architecture
@@ -26,6 +33,23 @@ Review the plan before implementation. For each issue or recommendation:
 
 5. Security
 - auth boundaries, data exposure, risky assumptions.
+
+## Output Contract
+
+For each material issue, output:
+- Issue ID,
+- severity,
+- evidence,
+- why now,
+- options A/B/C,
+- option economics (effort, risk, blast radius, maintenance burden),
+- recommended option and rationale.
+
+Then output:
+- Failure Modes & Edge Cases,
+- Uncertainty Register (assumptions, unknowns, confidence),
+- Decision Baseline (Frozen),
+- Decision Adherence Validation table.
 
 ## Operational Note
 

@@ -47,12 +47,16 @@ Execution rules move to workflows, skills, and decision gates.
 
 ### 2) Required Decision Fields
 
-For every material issue, you must provide:
+For every material issue, the assistant/reviewer must provide:
 - evidence,
 - options,
 - effort,
 - risk,
 - recommendation.
+
+User responsibility:
+- review the recommendation,
+- approve or request changes before implementation.
 
 ### 3) Decision Baseline + Adherence Gate
 
